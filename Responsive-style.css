@@ -1,0 +1,219 @@
+@media  (max-width:1400px){
+    .serviceWrapper h3 {
+        font-size: 1.6rem;
+        }
+        
+        .serviceWrapper .card {
+        padding: 2rem;
+        }
+
+}
+
+@media (max-width:1251px){
+
+    h1{
+        font-size: 4.375rem;
+    }
+    h2{
+
+        font-size: 2.1875rem;
+    }
+
+    h3{
+        font-size: 1.4375rem;
+    }
+
+    .menuWrapper .accordion-body {
+        padding: 2rem;
+    }
+
+    .menuWrapper .cardDetail {
+        padding: .675rem;
+        top: 1rem;
+    }
+
+    .menuWrapper .cardDetail ul li{
+        padding: .6125rem 0;
+        
+    }
+    
+}
+
+@media (max-width:992px){
+
+    h1{
+        font-size: 3.175rem;
+        line-height: 1.3;
+    }
+    h2{
+
+        font-size: 1875rem;
+    }
+
+    h3{
+        font-size: 1.75rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    /* .serviceWrapper h3 {
+        font-size: 1.6rem;
+        } */
+        
+        .serviceWrapper .card {
+        padding: 1.75rem 1.5rem;
+        }
+
+
+    .iconDesign{
+        width: 4.625rem;
+        height: 4.625rem;
+    }
+    .menuWrapper .accordion-header.accordion-button {
+        line-height: 5.875rem;
+    }
+
+    .menuWrapper .accordion-header .iconBox,
+    .menuWrapper .accordion-header .accordion-button:after{
+        width:6rem;
+    }
+
+ .testimonialsWrapper .profileBox{
+    padding: 1rem;
+ }
+
+ .testimonialsWrapper .card {
+    padding: 1.125rem;
+
+ }
+ .testimonialsWrapper .desc-box {
+    padding-left: 1rem;
+ }
+
+ 
+
+
+    
+}
+
+@media (max-width:767px){
+
+    
+    h1{
+        font-size: 1.835rem;
+    }
+    h2{
+
+        font-size: 1.25rem;
+    }
+
+    h3{
+        font-size: 1.125rem;
+    }
+    h5{
+        font-size: .9375rem;
+    }
+    p{
+        font-size: .875rem;
+    }
+
+ .resumeWrapper .title h2 {
+    font-size: 1.25rem;
+ }
+ /* .resumeWrapper h4{
+    font-size: 1rem !important;
+ } */
+    
+}
+
+@media (max-width:576px ){
+
+    a{
+        font-size: 0.8125rem;
+    }
+    .main-btn{
+        padding: .5rem .75rem;
+        font-size: 0.8128rem;
+    }
+
+    .header-wrapper .navbar-brand .img-fluid 
+    {
+        max-width: 7rem;
+    }
+
+    .banner_wrapper .socialIcon a img{
+        width: 2.125rem;
+        height: 2.125rem;
+    }
+    .menuWrapper .accordion-header.accordion-button {
+        line-height: 2.875rem;
+    }
+
+    .menuWrapper .accordion-header .iconBox,
+    .menuWrapper .accordion-header .accordion-button:after{
+        width:4rem;
+    }
+
+    .menuWrapper .accordion-header .iconBox img
+    {
+        width: 1.875rem;
+
+    }
+
+    .menuWrapper .accordion-header .accordion-button:after{
+
+        background-size: 1.7rem;
+    }
+
+    .menuWrapper .accordion-body{
+        padding: 1.25rem;
+    }
+
+    .testimonialsWrapper .carousel-indicators{
+        padding: 1rem;
+     }
+
+     .testimonialsWrapper .profileBox { 
+            text-align: center;
+            border-radius:  .5rem .5rem 0 0;
+     }
+
+
+     .testimonialsWrapper .card {
+        border-radius: 0 0 .5rem .5rem ;
+     }
+
+     .testimonialsWrapper .profileBox img { 
+        width: 100%;
+     }
+     .resumeWrapper h4{
+        font-size: 22.623px !important;
+     }
+
+     
+    
+}  
+
+@media (max-width:490px ){
+
+    .menuWrapper .accordion-body .card_img{
+    display: none;
+
+    }
+
+    .menuWrapper .cardDetail{
+        position: unset;
+        width: 100%;
+    }
+    
+    
+    .portfolioWrapper .nav-link {
+        
+        padding: 0 .625rem;
+    }
+    
+    .portfolioWrapper .portfoiloImg {
+        min-height: unset;
+    }
+}
+

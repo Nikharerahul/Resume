@@ -1,0 +1,509 @@
+/* ***************
+1.  General
+2.  Navbar
+3.  Banner
+4.  Menu 
+        About
+        Resume
+        Portfolio
+        Services
+        Testimonial
+        Blog
+        Contact
+        Footer
+***************** */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    /* Background Color */
+    --color-bg-remi :#ff451b;
+    --color-bg-yumi : #ffb324;
+    --color-bg-chal :#495b50;
+    --color-bg-gray :#5c5d64;
+    --color-bg-kali :#1d1b1b;
+    --color-bg-kanu :#777a7f;
+    /* Text Color */
+    --text-color-remi : #ff451b;
+    --text-color-white:#fff;
+    --text-color-gray: #a7afbd;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: var(--color-bg-kali);
+}
+
+::-webkit-scrollbar{
+    width: 0.25rem;
+
+}
+
+::-webkit-scrollbar-track{
+    background: var(--color-bg-gray);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-bg-remi);
+}
+
+.main-btn{
+    color: var(--text-color-white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight:600;
+    background: var(--color-bg-remi);
+    padding: .875rem 3.125rem;
+    border-radius: .625rem;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition:  all .3s ease;
+
+
+}
+
+.main-btn:hover {
+
+    background-color: var(--color-bg-yumi);
+    color: var(--text-color-white);
+}
+
+h1{
+    font-size: 6.25rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1.6875rem;
+    color: var(--text-color-white);
+}
+
+h2{
+    font-size: 2.9357rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-color-white);
+  
+}
+h3{
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-bg-remi);
+}
+
+h5{
+    font-size: 1.35rem; 
+    line-height: 1.5;
+    color: var(--text-color-gray);
+}
+
+h6{
+    font-size: .825rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-color-white);
+    opacity: .85;
+}
+
+p{
+    color: var(--text-color-gray);
+    font-size: 1.12rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 1.875rem 0;
+}
+
+span{
+    color: var(--text-color-white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-color-white);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.iconDesign{
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: var(--color-bg-yumi);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper .navbar{
+    padding: 0.9375em 0rem; 
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    z-index:9999;
+   
+}
+
+.header-wrapper .navbar-brand img{
+    max-width: 14.374rem;
+    height: auto;
+}
+
+.headerScrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-gray);
+    -webkit-box-shadow: 0 0.25rem 0.375rem 0 rgba(12,0,46,.05);
+    box-shadow: 0 0.25rem 0.375rem 0 rgba(12,0,46,.05);
+    z-index: 1;
+
+}
+
+
+.banner_wrapper .background_shape{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 4.0625rem);
+    /* background-image: url('./top-background.png'); */
+    background-image:url('../top-background.png') ;
+    background-position: center center;
+    background-size: cover;
+    clip-path:polygon(100% 0%, 0% 0%, 0% 100%, 100% 62%);
+    z-index: -1;
+}
+
+/* .banner_wrapper .main_content{
+    position: relative;
+    z-index:-1;
+    width: 100%;
+   padding-top: 6.25rem; 
+}
+   */
+
+.banner_wrapper .socialIcon a img{
+    width: 3.125rem;
+    height: 3.125rem;
+    transition: 0.3s ease-in;
+}
+
+.banner_wrapper .socialIcon a:hover img{
+    transform: translateY(-0.3325rem);
+ }
+
+
+ /* accordion menu */
+ .menuWrapper .accordion-item {
+    background-color: transparent;
+    margin: 0 0 1.5625rem;
+
+ }
+
+ .accordion-item{
+    border: none !important;
+ }
+
+ 
+
+ .menuWrapper .accordion-header .accordion-button {
+    margin: 0 .3125rem;
+    background-color: var(--color-bg-kanu);  
+    /* background-color: transparent; */
+    box-shadow: 1.125rem 1.125rem 3rem rgb(108 99 255/10%);
+    border-radius: .9375rem !important;
+    line-height: 4.875rem;
+    padding: 0;
+    padding-right: 3.125rem;
+    -webkit-transition:  all .3s ease;
+    -o-transition:  all .3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all .3s ease;
+ }
+
+ .menuWrapper .accordion-header .iconBox{
+    width: 5rem;
+    height: 100%;
+    border-radius: .9375rem 0 0 .9375rem;
+    background-color: var(--color-bg-yumi);
+    text-align: center;
+    
+ }
+
+ .menuWrapper .accordion-header .accordion-button:after {
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    height: 100%;
+    border-radius: 0 .9375rem  .9375rem 0;
+    background-image: url("./up-arrow.svg");
+    background-color: var(--color-bg-yumi);
+    background-size: 2rem;
+    background-position: center center;
+    -webkit-transition:  all .3s ease;
+    -o-transition:  all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+ }
+
+ .menuWrapper .accordion-header .accordion-button:not(.collapsed)::after{
+    border-radius: .9375rem 0 0 .9375rem;
+    background-image: url("./down-arrow.svg");
+ }
+
+ .menuWrapper .accordion-header:hover button,
+ .menuWrapper .accordion-header .accordion-button:not(.collapsed) {
+    background-color: var(--color-bg-remi);
+ }
+
+ .menuWrapper .accordion-body{
+    background-color: var(--color-bg-kanu);
+    margin-top: 1.5625rem;
+    padding: 4.375rem;
+    border-radius: .9375rem;
+ }
+
+ .menuWrapper .accordion-body .card_img{
+    width: 60%;
+    border: 0;
+    border-radius: .9375rem;
+ }
+
+ .menuWrapper .accordion-body .card_img img{
+    border-radius: .9375rem;
+ }
+
+ .menuWrapper .cardDetail{
+    position: absolute;
+    /* line-height: 3rem; */
+    top: 3.75rem;
+    right: 1.25rem;
+    width: 47%;
+    background-color: var(--color-bg-remi);
+    padding: 1.5625rem 1.8rem;
+    border-radius: .9375rem;
+    z-index:1;
+ }
+
+ .menuWrapper .cardDetail ul li {
+    border-bottom: .0625rem dashed rgba(255, 255, 255, .3);
+    padding: .625rem 0;
+ }
+
+ /* Resume  */
+ .resumeWrapper .title h2 {
+    padding-left: 2.5rem;
+    font-size: 2.1875rem;
+
+ }
+
+ .resumeWrapper .shape{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    border: .1875rem solid var(--color-bg-remi);
+ }
+
+ .resumeWrapper .shape:before{ 
+    position: absolute;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: var(--color-bg-remi);
+    transform: translate(-50% , -50%);
+ }
+
+ .resumeWrapper .progress{ 
+    height: 0.4375rem;
+    border-radius: 3.125rem;
+    background-color: var(--color-bg-chal);
+    opacity:0.80;
+    margin-top: 1.5625rem;
+ }
+
+
+ .resumeWrapper .progress-bar    {
+    background-color: var(--color-bg-remi);
+    position: absolute;
+    height: .3125rem;
+    top: 3.125rem;
+    border-radius: 3.125rem;
+ }
+
+ .resumeWrapper .progress span  {
+    position: absolute;
+    right: 0;
+    top: 1.25rem;
+    color: var(--text-color-white); 
+
+ }
+
+ .portfolioWrapper .nav-link {
+    color: var(--text-color-white);
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing:.0625rem;
+    text-align:center;
+ }
+
+ .portfolioWrapper .nav-link.active,
+ .portfolioWrapper .show>.nav-link {
+    background-color:transparent;
+    color: var(--color-bg-remi);
+ }
+
+
+ .portfolioWrapper .portfoiloImg {
+    width: 100%;
+    min-height: 23.75rem;
+    height: 100%;
+    position: relative;
+    border-radius: .9375rem;
+    cursor: pointer;
+ }
+
+ .portfolioWrapper .portfoiloImg>img { 
+    border-radius: .9375rem;
+    object-fit:cover;
+    object-position:center;
+}
+
+
+.portfolioWrapper .portfoiloImg .hiddenText{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:0;
+    z-index:1;
+    background-color:rgba(255,69,27,.72);
+    border-radius: .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+ .portfolioWrapper .portfoiloImg:hover .hiddenText { 
+    height: 100%;
+ }
+
+ .serviceWrapper .card{
+    border-radius: 0.9375rem;
+    background-color: var(--color-bg-gray);
+    padding: 3.75rem 2.5rem 3.625rem;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+ }
+
+ .serviceWrapper .card:hover { 
+    background-color: var(--color-bg-remi);
+ }
+
+ .testimonialsWrapper .carousel-indicators{
+   bottom: -2.8125rem;
+ }
+
+ .testimonialsWrapper .carousel-indicators[data-bs-target]{
+   background-color: var(--color-bg-yumi);
+
+ }
+
+ .testimonialsWrapper .card {
+   padding: 3.125rem 3.125rem 3.125rem 0;
+   background-color: var(--color-bg-gray);
+   border-radius: 0 .5rem .5rem 0;
+ }
+
+ .testimonialsWrapper .profileBox{
+   padding: 1.875rem;
+   background-color: var(--color-bg-remi);
+   border-radius: .5rem 0 0 .5rem;
+ }
+
+ .testimonialsWrapper .profileBox img {
+   border-radius: 0.625rem 3.125rem;
+ }
+
+ .testimonialsWrapper .desc-box {
+   padding-left: 2.5rem;
+ }
+
+
+ .blogWrapper .card {
+   background-color: var(--color-bg-gray);
+   border-radius: .9375rem;
+   overflow: hidden;
+ }
+
+ .blogWrapper .card img  {
+   border-radius: .9375rem .9375rem 0 0;
+   transition: all .3s ease;
+}
+
+.blogWrapper .card img:hover { 
+   transform: scale(1.1);
+}
+
+.blogWrapper .card h5 { 
+   font-weight: 700;
+   color: var(--text-color-remi);
+}
+
+.contactWrapper form .form-control:focus {
+   box-shadow: none;
+}
+
+.contactWrapper form .form-control {
+   width: 100%;
+   height: 3.75rem;
+   border: .0625rem solid rgba(255, 255, 255, .15);
+   border-radius: .625rem;
+   background-color: transparent;
+   color:var(--text-color-gray)
+}
+
+.contactWrapper form .form-control::placeholder{
+   color: var(--text-color-gray);
+}
+
+.contactWrapper form textarea.form-control {
+   height: 14.375rem;
+}
+
+
+
+
+
+
+
+
+
